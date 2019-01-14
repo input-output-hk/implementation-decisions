@@ -1,0 +1,3 @@
+[submodule "fm-ledger-rules"]
+	path = fm-ledger-rules
+	url = https://github.com/input-output-hk/fm-ledger-rules
