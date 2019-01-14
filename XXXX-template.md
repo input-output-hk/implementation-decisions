@@ -12,7 +12,7 @@ One paragraph explanation of the feature.
 
 Why are we doing this? What use cases does it support? What is the expected outcome?
 
-# Guide-level explanation
+# Decision
 [guide-level-explanation]: #guide-level-explanation
 
 Explain the proposal as if it was already included in the blockchain and you
@@ -21,10 +21,11 @@ were teaching it to someone else. That generally means:
 - Introducing new named concepts.
 - Explaining the feature largely in terms of examples.
 
-# Reference-level explanation
+# Technical explanation
 [reference-level-explanation]: #reference-level-explanation
 
-This is the technical portion of the RFC. Explain the design in sufficient detail that:
+This is the detailed technical portion of the RFC. Explain the design in
+sufficient detail that:
 
 - Its interaction with other features is clear.
 - It is reasonably clear how the feature would be implemented.
@@ -32,7 +33,7 @@ This is the technical portion of the RFC. Explain the design in sufficient detai
 
 The section should return to the examples given in the previous section, and explain more fully how the detailed proposal makes those examples work.
 
-# Drawbacks
+# Drawbacks/Implications
 [drawbacks]: #drawbacks
 
 Why should we *not* do this?
