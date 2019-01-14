@@ -13,7 +13,7 @@ One paragraph explanation of the feature.
 Why are we doing this? What use cases does it support? What is the expected outcome?
 
 # Decision
-[guide-level-explanation]: #guide-level-explanation
+[Decision]: #decision
 
 Explain the proposal as if it was already included in the blockchain and you
 were teaching it to someone else. That generally means:
@@ -22,7 +22,7 @@ were teaching it to someone else. That generally means:
 - Explaining the feature largely in terms of examples.
 
 # Technical explanation
-[reference-level-explanation]: #reference-level-explanation
+[technical-explanation]: #technical-explanation
 
 This is the detailed technical portion of the RFC. Explain the design in
 sufficient detail that:
@@ -34,7 +34,8 @@ sufficient detail that:
 The section should return to the examples given in the previous section, and explain more fully how the detailed proposal makes those examples work.
 
 # Drawbacks/Implications
-[drawbacks]: #drawbacks
+[drawbacks]: #drawbacksimplications
+[implications]: #drawbacksimplications
 
 Why should we *not* do this?
 
