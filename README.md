@@ -2,7 +2,7 @@
 
 A repository for all concrete decisions made about how to implement the cardano
 blockchain. This repository contains all the technical details and improvements
-that is needed for the developers. The repository contains git submodules that
+that are needed for the developers. The repository contains git submodules that
 pin down specific versions of the formal specifications which these concrete
 technical decisions refer to. Changes to this need to be reflected in the
 different documents.
@@ -25,9 +25,9 @@ Proposals are to be made if:
 
 1. The formal specification is too vague and a concrete decision needs to be
    taken. Example: it is said the we take an index `idx` from the set of `Idx`.
-   However there is not specification wether it is acceptable to have negative
-   indices or if it is bounded (32bits? 64bits?), of if it is from 0 or from 1.
-   A proposal can be made to pin this down and guarantee that we are all talking
+   However it doesn't specify wether it is acceptable to have negative indices
+   or if it is bounded (32bits? 64bits?), of if it is from 0 or from 1. A
+   proposal can be made to pin this down and guarantee that we are all talking
    about the same thing.
 2. The current blockchain needs to include new features in order to implement the
    new feature defined by the formal spec. This needs to be documented here too.
