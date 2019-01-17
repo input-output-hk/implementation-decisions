@@ -1,4 +1,4 @@
-# implementation decisions
+# Implementation Decisions
 
 A repository for all concrete decisions made about how to implement the cardano
 blockchain. This repository contains all the technical details and improvements
@@ -47,6 +47,18 @@ Proposals are to be made if:
    follow the comments and will direct the conversation toward consensus. If no
    consensus can be reached in a timely manner they may: close the PR or apply
    any changes they believe to be necessary before merging the PR.
+
+# Guidelines for formal-specifications writers
+
+Writers of formal-specifications referred in this document should check that
+when these specifications are updated, all changes affecting `RFC`'s in this
+repository should be accounted for. In practical terms this means that if a
+change in the specifications affects a previous `RFC` the writer should:
+- submit a new `RFC` which refers to the `RFC` that the changes in the spec is
+  affecting.
+- specify whether the previous `RFC` is rendered obsolete by the new `RFC`, or
+  whether the latter is just an addendum to the former.
+- update the version of the specification pinned in the git submodules.
 
 # License
 
