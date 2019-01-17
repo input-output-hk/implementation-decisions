@@ -92,6 +92,7 @@ GroupKey = 292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748
 A production **Grouped Address** would look like:
 `ca1qsqsyqcyq5rqwzqfpg9scrgwpugpzysnzs23v9ccrydpk8qarc0jq2f29vkz6t30xqcnyve5x5mrwwpe8ganc0f78aqyzsjrg3z5v36gguhxny`.
 Note the `ca` prefix again.
+
 A test **Grouped Address** would look like:
 `ta1ss5j52ev95hz7vp3xgengdfkxuurjw3m8s7nu06qg9pyx3z9ger5sqgzqvzq2ps8pqys5zcvp58q7yq3zgf3g9gkzuvpjxsmrsw3u8eqx5x7xh`.
 Note the `ta` prefix here.
@@ -122,11 +123,15 @@ Group key:
 
 Bit value for the `DISCRIMINATION_BIT`:
 
+| value | purpose |
+|---:|:--- |
 | 0 | Production Address |
 | 1 | Test Address |
 
 Address kind:
 
+| value | purpose |
+|---:|:--- |
 | 0 | reserved |
 | 1 | reserved |
 | 2 | reserved |
@@ -142,6 +147,8 @@ PublicKey = 0102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f20
 
 would be encoded as follow:
 
+|discriminant | first byte | public key |
+|---:|:---|:--|
 | Production | `0x03` (`0b0000_0011`) | `0102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f20` |
 | Testing    | `0x83` (`0b1000_0011`) | `0102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f20` |
 
@@ -151,6 +158,8 @@ and a **Grouped Address** with the group key:
 GroupKey = 292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748
 ```
 
+|discriminant | first byte | public key | Group Key |
+|---:|:---|:--|:--|
 | Production | `0x04` (`0b0000_0100`) | `0102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f20` | `292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748` |
 | Testing    | `0x84` (`0b1000_0100`) | `0102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f20` | `292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748` |
 
