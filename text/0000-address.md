@@ -46,7 +46,7 @@ within reason.
 [guide-level-explanation]: #guide-level-explanation
 
 An `Address` is a mean to associate a token to a cryptographic key pair.
-In order for Bod to send a token to Alice, Alice needs to generate a key
+In order for Bob to send a token to Alice, Alice needs to generate a key
 pair, a `PublicKey` and a `PrivateKey`. Alice generates an `Address` from
 this `PublicKey` and sends the `Address` to Bob and Bob adds on the Ledger
 that he has sent a token to the public key.
