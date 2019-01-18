@@ -104,7 +104,8 @@ Note the `ta` prefix here.
 
 It uses a simple serialization format which is made to be concise:
 
-* First byte contains the discrimination information (1 bit) and the kind of address (7 bits)
+* First byte contains the discrimination information (1 bit) and the kind of address (7 bits).
+  The discriminant being the most significant bit.
 * Remaining bytes contains a kind specific encoding describe after.
 
 2 kind of address are currently supported:
