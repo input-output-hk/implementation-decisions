@@ -32,7 +32,7 @@ within reason.
    of this proposal. Because of the model of the blockchain, every byte ever
    included in the ledger will be stored there forever. We need to ensure that
    we store only what is necessary. On the previous address encoding, the cbor
-   model allowed for including unbounded byte array in the address which has been
+   model allowed for including an unbounded byte array in the address which has been
    leverage to include random data;
 2. Another motivation to keep the address as short as possible is that it will
    save on transaction fees too (the current fee algorithm being linear in number
