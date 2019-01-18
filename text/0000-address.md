@@ -23,7 +23,7 @@ The new proposed address format exposes the following properties:
 [motivation]: #motivation
 
 The current address model is wasting quite a lot of space. It is a large
-CBOR structure and does not distinguish what is necessary for the blockchain
+CBOR structure and does not distinguish between what is necessary for the blockchain
 and what is necessary for the human readability. This RFC fixes this by
 proposing a much simpler address format in the sense that it is extendable
 within reason.
