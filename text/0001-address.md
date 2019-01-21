@@ -1,6 +1,6 @@
 - Feature Name: address
 - Start Date: 2019-01-17
-- RFC PR: (leave this empty)
+- RFC PR: [#12](https://github.com/input-output-hk/implementation-decisions/pull/12)
 - Authors:
   - Nicolas Di Prima (nicolas.diprima@iohk.io)
   - Vincent Hanquez (vincent.hanquez@iohk.io)
