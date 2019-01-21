@@ -11,7 +11,7 @@
 A new address format for the cardano blockchain that exposes extendable
 properties as well as being as compact as possible.
 
-The new proposed address format exposes the following properties:
+The new proposed address format satisfies the following properties:
 
 1. compact on the blockchain;
 2. extendable within reason;
@@ -28,18 +28,18 @@ and what is necessary for the human readability. This RFC fixes this by
 proposing a much simpler address format in the sense that it is extendable
 within reason.
 
-1. the _compact-ability_ of the address on the blockchain is a prime motivation
+1. The _compact-ability_ of the address on the blockchain is a prime motivation
    of this proposal. Because of the model of the blockchain, every byte ever
    included in the ledger will be stored there forever. We need to ensure that
    we store only what is necessary. On the previous address encoding, the cbor
    model allowed for including an unbounded byte array in the address which has been
-   leverage to include random data;
+   leveraged to include random data.
 2. Another motivation to keep the address as short as possible is that it will
-   save on transaction fees too (the current fee algorithm being linear in number
-   of bytes);
+   save on transaction fees (the current fee algorithm being linear in number
+   of bytes).
 3. The new address model allows to up to 123 different types of addresses. The
    current RFC only proposes 2 models: simple and grouped.
-4. we also propose a new human readable encoding. This will allow visual
+4. We also propose a new human readable encoding. This will allow visual
    discrimination for the user between the old address format and the new one.
 
 # Guide-level explanation
@@ -106,9 +106,9 @@ It uses a simple serialization format which is made to be concise:
 
 * First byte contains the discrimination information (1 bit) and the kind of address (7 bits).
   The discriminant being the most significant bit.
-* Remaining bytes contains a kind specific encoding describe after.
+* Remaining bytes contains a kind specific encoding described after.
 
-2 kind of address are currently supported:
+2 kinds of address are currently supported:
 
 * Single: Just a (spending) public key using the ED25519 algorithm
 * Group: Same as single, but with a added (staking/group) public key
@@ -205,7 +205,7 @@ The new format only contains:
   * 1bit of address discrimination (production/testing);
   * 7bits of address type (allowing up to 123 different types);
 * 32 bytes of public key;
-* 32 bytes of stake distribution (for non bootstrap era)
+* 32 bytes of public staking key (optional)
 
 Smallest is 33bytes. Longest is 65bytes.
 
